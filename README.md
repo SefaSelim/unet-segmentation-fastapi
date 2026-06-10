@@ -25,7 +25,7 @@ README.md
 From the repository root:
 
 ```bash
-docker-compose up --build
+docker-compose up
 ```
 
 The API will be available at:
@@ -83,7 +83,7 @@ Response fields:
 1. Start the service:
 
    ```bash
-   docker-compose up --build
+   docker-compose up
    ```
 
 2. Open:
