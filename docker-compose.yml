@@ -1,0 +1,14 @@
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - "7001:7001"
+    environment:
+      MODEL_PATH: models/unet_segmentation_model.pth
+      IMAGE_SIZE: "256"
+      MASK_THRESHOLD: "0.5"
+      AREA_RATIO_THRESHOLD: "0.01"
+      POSITIVE_LABEL: tumor
+      NEGATIVE_LABEL: no_tumor
+    restart: unless-stopped
